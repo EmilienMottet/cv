@@ -1,64 +1,67 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Emilien
   middle:
-  last: Doe
+  last: Mottet
 about: Hi, my name is John Doe. I"m just about the most boring type of person you could
        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+position: IT engineer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1995
+  location: Roanne, France
 
 experience:
-- company: Company A
+- company: Michelin
+  position: Apprentice engineer
+  timeperiod: since September 2016
+  description: Programming and support on git,java.
+
+- company: MFLS Forezienne
   position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+  timeperiod: March 2016 - July 2016
+  description: Develop a full software for generate bonus for commercials.
+  website: https://www.forezienne.com/
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: RETAL
+  position: warehouseman
+  timeperiod: Summer 2015
+  description: Work in a water bottle cap manufacturing plant.
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: SICAREV
+  position: warehouseman
+  timeperiod: Summer 2014
+  description: Cutting meat.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: IT & Math Engineer
+  timeperiod: September 2016 - August 2019
+  description: Apprentice in IT Engineering, ENSIMAG, Grenoble, France.
+  website: http://ensimag.org
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: DUT
+  timeperiod: September 2014 - July 2016
+  description: Third in IT school, University of Auverge, Clermont II, France.
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
+- name: Java
+  level: 90
+- name: C
   level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: ASM
+  level: 60
+- name: Linux
+  level: 90
+- name: Database
+  level: 80
+- name: git
+  level: 90
+- name: opensource
+  level: 80
+knowledge: Like History and Actuality , talk
+  Français and English.
 
 projects:
 - name: best-resume-ever
@@ -81,12 +84,12 @@ contributions:
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: emilien@emottet.com
+  phone: +33 658926176
+  street: 53 rue du Temple
+  city: Clermont-Ferrand
+  website: emottet.com
+  github: EmilienMottet
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
