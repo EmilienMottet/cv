@@ -3,10 +3,11 @@ name:
   first: Emilien
   middle:
   last: Mottet
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: IT engineer
+# about: Hi, my name is John Doe. I"m just about the most boring type of person you could
+#        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
+#        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
+  about: Currently in last year of school. My experiences and projects show that I am a motivated and enthusiastic person.
+  position: IT engineer
 
 birth:
   year: 1995
@@ -50,7 +51,7 @@ skills:
   level: 90
 - name: C
   level: 80
-- name: ASM
+- name: Javascript
   level: 60
 - name: Linux
   level: 90
@@ -61,27 +62,43 @@ skills:
 - name: opensource
   level: 80
 knowledge: Like History and Actuality , talk
-  Français and English.
+  French and English.
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Java-like Compiler
+  platform: Java
+  description: Implement a compiler in group of six
+- name: Operating System
+  platform: C
+  description: Build an OS from \"scratch\"
+  url: https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
+- name: Music Streaming Web App
+  platform: Javascript
+  description: Make a web app for streaming music and upload song.
+  url: https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
+
 
 hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
+- name: Soccer
+  iconClass: fa fa-futbol-o
 
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
+- name: News
+  iconClass: fa fa-newspaper-o
+  url: https://www.lemonde.fr/
+
+- name: Movies
+  iconClass: fa fa-film
+  url: https://www.imdb.com/
 
 contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: gitlab
+  description: GitLab is a web-based Git-repository
+  url: https://gitlab.com/gitlab-org/gitlab-ce
+
+- name: java-gitlab-api
+  description: A wrapper for the Gitlab API written in Java
+  url: https://github.com/timols/java-gitlab-api
+
 
 contact:
   email: emilien@emottet.com
