@@ -7,7 +7,7 @@ name:
 #        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
 #        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
   about: Currently in last year of school. My experiences and projects show that I am a motivated and enthusiastic person.
-  position: IT engineer
+position: IT engineer
 
 birth:
   year: 1995
@@ -25,15 +25,10 @@ experience:
   description: Develop a full software for generate bonus for commercials.
   website: https://www.forezienne.com/
 
-- company: RETAL
+- company: SICAREV / RETAL
   position: warehouseman
-  timeperiod: Summer 2015
-  description: Work in a water bottle cap manufacturing plant.
-
-- company: SICAREV
-  position: warehouseman
-  timeperiod: Summer 2014
-  description: Cutting meat.
+  timeperiod: Summer 2014 / Summer 2015
+  description: Cutting meat. / Work in a water bottle cap manufacturing plant.
 
 education:
 - degree: IT & Math Engineer
@@ -56,7 +51,7 @@ skills:
 - name: Linux
   level: 90
 - name: Database
-  level: 80
+  level: 75
 - name: git
   level: 90
 - name: opensource
@@ -73,12 +68,14 @@ projects:
   platform: C
   timeperiod: juin 2018
   description: Build an OS from \"scratch\"
-  url: https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
+  url: https://bit.ly/2INjfsz
+  # https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
 - name: Music Streaming Web App
   platform: Javascript
   timeperiod: mai 2018
-  description: Make a web app for streaming music and upload song.
-  url: https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
+  description: Music streaming web app
+  url: https://bit.ly/2yfAFd
+    # https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
 
 
 hobbies:
