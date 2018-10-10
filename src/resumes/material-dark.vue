@@ -140,122 +140,122 @@ export default Vue.component(name, getVueOptions(name));
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 .resume {
-  font-family:'Roboto' !important;
-  background:#cccccc;
+    font-family:'Roboto' !important;
+    background:#cccccc;
 }
 a {
-  cursor:pointer;
+    cursor:pointer;
 }
 .description-personal {
-  margin-left:20px;
-  margin-top:20px;
-  padding-right:40px;
-  text-align:justify;
-  font-family:Roboto;
+    margin-left:20px;
+    margin-top:20px;
+    padding-right:40px;
+    text-align:justify;
+    font-family:Roboto;
 }
 .title {
-  right:25px;
-  padding-left:20px;
-  padding-top:20px;
-  bottom:25px;
-  h2 {
-    text-transform:uppercase;
-    display:block;
-    font-size:1.17em;
-    -webkit-margin-before:1em;
-    -webkit-margin-after:1em;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
-    color:white;
-    color:rgba(0,0,0,0.7);
-    padding-top:0;
-    margin-top:0;
-    letter-spacing:10px;
-    font-weight:400;
-  }
-  div {
-    margin-top:-5px;
-    margin-top:0;
-    margin:0;
-    padding:0;
-    line-height:15pt;
-    font-weight:300;
-    font-weight:500;
-    letter-spacing:2px;
-    letter-spacing:3px;
-    color:white;
-    color:#16151c;
-    color:rgba(63,61,60,0.71);
-    display:block;
-    font-size:0.67em;
-    font-size:10pt;
-    -webkit-margin-before:2.33em;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
-    padding-top:0;
-    text-transform:uppercase;
-    opacity:0.8;
-  }
+    right:25px;
+    padding-left:20px;
+    padding-top:20px;
+    bottom:25px;
+    h2 {
+        text-transform:uppercase;
+        display:block;
+        font-size:1.17em;
+        -webkit-margin-before:1em;
+        -webkit-margin-after:1em;
+        -webkit-margin-start:0;
+        -webkit-margin-end:0;
+        color:white;
+        color:rgba(0,0,0,0.7);
+        padding-top:0;
+        margin-top:0;
+        letter-spacing:10px;
+        font-weight:400;
+    }
+    div {
+        margin-top:-5px;
+        margin-top:0;
+        margin:0;
+        padding:0;
+        line-height:15pt;
+        font-weight:300;
+        font-weight:500;
+        letter-spacing:2px;
+        letter-spacing:3px;
+        color:white;
+        color:#16151c;
+        color:rgba(63,61,60,0.71);
+        display:block;
+        font-size:0.67em;
+        font-size:10pt;
+        -webkit-margin-before:2.33em;
+        -webkit-margin-start:0;
+        -webkit-margin-end:0;
+        padding-top:0;
+        text-transform:uppercase;
+        opacity:0.8;
+    }
 }
 .section-headline {
-  text-transform:uppercase;
-  font-weight:500;
-  letter-spacing:3px;
-  font-size:10pt;
-  opacity:0.8;
-  margin-left:20px;
-  margin-top:40px;
-  margin-bottom:20px;
-  color:#3f3d3c;
+    text-transform:uppercase;
+    font-weight:450;
+    letter-spacing:3px;
+    font-size:10pt;
+    opacity:0.8;
+    margin-left:16px;
+    margin-top:30px;
+    margin-bottom:16px;
+    color:#3f3d3c;
 }
 .c {
-  clear:both;
+    clear:both;
 }
 li {
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  padding-top:9px;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    padding-top:9px;
 }
 ul {
-  margin:0;
-  padding:0;
-  list-style-type:none;
+    margin:0;
+    padding:0;
+    list-style-type:none;
 }
 p {
-  margin-top:0;
-  margin-bottom:25px;
-  font-family:'Roboto', sans-serif;
-  font-weight:300;
-  font-size:10pt;
-  line-height:17pt;
+    margin-top:0;
+    margin-bottom:25px;
+    font-family:'Roboto', sans-serif;
+    font-weight:300;
+    font-size:10pt;
+    line-height:17pt;
 }
 .m_box {
-  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .fa, .material-icons {
-  display:inline-block;
-  font-style:normal;
-  font-weight:normal;
-  line-height:1;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  font-size:26px;
+    display:inline-block;
+    font-style:normal;
+    font-weight:normal;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-size:26px;
 }
 h1, h3, h5, h6 {
-  font-weight:400;
-  margin:0;
+    font-weight:400;
+    margin:0;
 }
 h2 {
-  font-weight:400;
-  font-weight:500;
-  margin:0;
-  margin:0;
-  font-size:22pt;
-  line-height:37pt;
+    font-weight:400;
+    font-weight:500;
+    margin:0;
+    margin:0;
+    font-size:22pt;
+    line-height:37pt;
 }
 h4 {
-  font-weight:400;
+    font-weight:400;
   margin:0;
   font-size:12pt;
   line-height:20pt;
@@ -268,12 +268,12 @@ h4 {
   display:flex;
   flex-direction:column;
   .block {
-    width:90%;
+    width:80%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
-    margin-top:5px;
-    margin-bottom:5px;
+    padding:10px 20px;
+    margin-top:4px;
+    margin-bottom:4px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
@@ -292,7 +292,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      padding-top:10px;
     }
     .icon {
       width:16%;
