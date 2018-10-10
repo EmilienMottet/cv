@@ -75,7 +75,7 @@
       </div>
     </a>
 
-    <div class="item last">
+    <div class="item">
       <div class="section-headline">
         {{ lang.skills }}
       </div>
@@ -87,6 +87,16 @@
               <i class="fa fa-circle"></i>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="item last">
+      <div v-if="person.knowledge" class="section-headline">
+        {{ lang.additionalSkills }}
+      </div>
+      <div v-if="person.knowledge" class="skill">
+        <div class="right">
+          <span>{{person.knowledge}}</span>
         </div>
       </div>
     </div>
