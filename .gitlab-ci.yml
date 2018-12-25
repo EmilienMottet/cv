@@ -1,10 +1,9 @@
-image: node:latest
-
 cache:
   paths:
   - node_modules/
 
 pdf:
+  image: alekzonder/puppeteer
   script:
     - npm install
     - rm -rf pdf
