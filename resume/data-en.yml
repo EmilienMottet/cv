@@ -1,6 +1,4 @@
 /* #*/ export const PERSON = `
-# Any fields left unchanged, please delete so your resume is fully yours!
-
 name:
   first: Emilien
   middle:
@@ -14,8 +12,6 @@ position: IT engineer
 birth:
   year: Dec, 1995
   location: France
-
-# you may add more experiences by duplicating the template
 
 experience:
 - company: Michelin
@@ -44,7 +40,7 @@ education:
   timeperiod: September 2014 - July 2016
   description: Third in IT school, University of Auvergne, Clermont II, France.
 
-# skill level goes from 0 to 100
+# skill level goes 0 to 100
 skills:
 - name: Java
   level: 90
@@ -68,23 +64,19 @@ knowledge: Like History, Actuality and Soccer Talk
 projects:
 - name: Java-like Compiler
   platform: Java
-  timeperiod: juin 2017
   description: Implement a compiler in group of six
 - name: Operating System
   platform: C
-  timeperiod: juin 2018
   description: Build an OS from \"scratch\"
   url: https://bit.ly/2INjfsz
   # https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
 - name: Music Streaming Web App
   platform: Javascript
-  timeperiod: mai 2018
   description: Music streaming web app
   url: https://bit.ly/2yfAFd
     # https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
 
 
-# optional, not all resume templates have hobbies included
 hobbies:
 - name: Soccer
   iconClass: fa fa-futbol-o
