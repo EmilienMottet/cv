@@ -1,0 +1,13 @@
+image: node:latest
+
+cache:
+  paths:
+  - node_modules/
+
+pdf:
+  script:
+    - npm install
+    - npm run export
+  artifacts:
+    paths:
+      - pdf/material-dark.pdf
