@@ -10,4 +10,4 @@ pdf:
     - npm run export
   artifacts:
     paths:
-      - pdf/material-dark.pdf
+      - pdf
