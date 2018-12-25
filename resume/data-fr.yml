@@ -7,38 +7,38 @@ name:
 #        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
 #        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
   about: Currently in last year of school. My experiences and projects show that I am a motivated and enthusiastic person.
-position: IT engineer
+position: emploi Ingénieur Informatique
 
 birth:
   year: Dec, 1995
-  location: France
+  location: Roanne
 
 experience:
 - company: Michelin
-  position: Apprentice engineer
-  timeperiod: since September 2016
-  description: Programming and support on git,java.
+  position: Apprenti Ingénieur
+  timeperiod: depuis Septembre 2016
+  description: Programmation et support en java/git dans un projet développant des solutions collaboratrices autour du code.
 
 - company: MFLS Forezienne
-  position: Developer
-  timeperiod: March 2016 - July 2016
-  description: Develop a full software for generate bonus for commercials.
+  position: Développeur
+  timeperiod: Mars 2016 - Juillet 2016
+  description: Développement d'un logiciel pour le calcul des commissions des commerciaux.
   website: https://www.forezienne.com/
 
 - company: SICAREV / RETAL
-  position: warehouseman
-  timeperiod: Summer 2014 / Summer 2015
-  description: Cutting meat. / Work in a water bottle cap manufacturing plant.
+  position: Manutentionnaire
+  timeperiod: Été 2014 / Été 2015
+  description: Découpe de viande / Manutention dans une fabrique de préforme de bouteille.
 
 education:
-- degree: IT & Math Engineer
-  timeperiod: September 2016 - August 2019
-  description: Apprentice in IT Engineering, ENSIMAG, Grenoble, France.
+- degree: Informatique et Mathématiques Appliqués
+  timeperiod: Septembre 2016 - Août 2019
+  description: Apprenti ingénieur informatique, ENSIMAG, Grenoble, France.
   website: http://ensimag.org
 
 - degree: DUT
-  timeperiod: September 2014 - July 2016
-  description: Third in IT school, University of Auvergne, Clermont II, France.
+  timeperiod: Septembre 2014 - Juillet 2016
+  description: Troisième, Université d'Auvergne, Clermont II, France.
 
 # skill level goes 0 to 100
 skills:
@@ -52,30 +52,26 @@ skills:
   level: 90
 - name: ASM
   level: 75
-- name: Database
+- name: Base de données
   level: 65
 - name: git
   level: 90
 - name: opensource
   level: 80
-knowledge: Like History, Actuality and Soccer Talk
-  French and English.
+knowledge:  Histoire, actualité, et football Français et Anglais parlé.
 
 projects:
-- name: Java-like Compiler
+- name: Java-like Compilateur
   platform: Java
-  timeperiod: juin 2017
-  description: Implement a compiler in group of six
-- name: Operating System
+  description: Réalisation d'un complitateur en équipe de 6
+- name: Système d'exploitation
   platform: C
-  timeperiod: juin 2018
-  description: Build an OS from \"scratch\"
+  description: Création d'un OS en partant de 0
   url: https://bit.ly/2INjfsz
   # https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
-- name: Music Streaming Web App
+- name: Application web de musique
   platform: Javascript
-  timeperiod: mai 2018
-  description: Music streaming web app
+  description: Utilisation de framework web moderne
   url: https://bit.ly/2yfAFd
     # https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
 
@@ -110,5 +106,5 @@ contact:
   website: emottet.com
   github: EmilienMottet
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
-lang: en
+lang: fr
 `
