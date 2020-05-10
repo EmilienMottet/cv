@@ -9,6 +9,7 @@ import './left-right-rtl.vue';
 import './oblique-rtl.vue';
 import './creative.vue';
 import './cool.vue';
+import './cool-custom.vue';
 import './cool-rtl.vue';
 import './cool-rtl2.vue';
 import './green.vue';
