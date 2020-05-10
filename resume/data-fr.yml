@@ -3,20 +3,22 @@ name:
   first: Emilien
   middle:
   last: Mottet
-# about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-#        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-#        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
   about: Currently in last year of school. My experiences and projects show that I am a motivated and enthusiastic person.
-position: emploi Ingénieur Informatique
+position: Ingénieur en Systèmes d'Information
 
 birth:
-  year: Dec, 1995
+  year: 1995
   location: Roanne
 
 experience:
 - company: Michelin
+  position: Ingénieur en Systèmes d'Information
+  timeperiod: Depuis Septembre 2019
+  description: Conception et développement de la nouvelle plate-forme de prise de commande pour l'Europe.
+
+- company: Michelin
   position: Apprenti Ingénieur
-  timeperiod: depuis Septembre 2016
+  timeperiod: Septembre 2016 - Août 2019
   description: Programmation et support en java/git dans un projet développant des solutions collaboratrices autour du code.
 
 - company: MFLS Forezienne
@@ -25,55 +27,62 @@ experience:
   description: Développement d'un logiciel pour le calcul des commissions des commerciaux.
   website: https://www.forezienne.com/
 
-- company: SICAREV / RETAL
-  position: Manutentionnaire
-  timeperiod: Été 2014 / Été 2015
-  description: Découpe de viande / Manutention dans une fabrique de préforme de bouteille.
-
 education:
-- degree: Informatique et Mathématiques Appliqués
+- degree: ENSIMAG, Informatique et Mathématiques Appliqués
   timeperiod: Septembre 2016 - Août 2019
-  description: Apprenti ingénieur informatique, ENSIMAG, Grenoble, France.
+  description: Diplômé Ingénieur filière Ingénierie des Systèmes d'Information, Grenoble, France.
   website: http://ensimag.org
 
 - degree: DUT
   timeperiod: Septembre 2014 - Juillet 2016
-  description: Troisième, Université d'Auvergne, Clermont II, France.
+  description: Université d'Auvergne, Clermont II, France.
 
 # skill level goes 0 to 100
 skills:
 - name: Java
   level: 90
-- name: C
-  level: 80
-- name: Javascript
-  level: 60
 - name: Linux
   level: 90
 - name: ASM
   level: 75
 - name: Base de données
   level: 65
-- name: git
+- name: Git
   level: 90
-- name: opensource
+- name: Opensource
   level: 80
-knowledge:  Histoire, actualité, et football Français et Anglais parlé.
+- name: Elixir
+  level: 90
+- name: Kubernetes
+  level: 60
+- name: Gentoo
+  level: 85
+knowledge:  Français et Anglais parlé. Passionné d'informatique, j'en ai fait mon métier, et je continue d'explorer ce monde passionant
 
 projects:
+- name: Rapport CVE-2018-19518
+  platform: PHP
+  description: Faille sur imap_open de PHP. Étude, exploit, correction
+  url: https://git.io/JfCtN
+- name: Rapport CVE-2018-10933
+  platform: libssh
+  description: Authentication Bypass. Étude, exploit, correction
+  url: https://git.io/JfCtb
+- name: Objet connecté
+  platform: Raspberry PI
+  description: Creation d'un compteur de personne par reconnaissance vidéo
+  url: https://github.com/fiyeli
 - name: Java-like Compilateur
   platform: Java
-  description: Réalisation d'un complitateur en équipe de 6
+  description: Réalisation d'un compilateur en équipe
 - name: Système d'exploitation
   platform: C
   description: Création d'un OS en partant de 0
-  url: https://bit.ly/2INjfsz
-  # https://ensiwiki.ensimag.fr/index.php?title=Projet_syst%C3%A8me_PC_:_2018_-_DARBON_Bertrand,_MOTTET_Emilien
+  url: https://frama.link/ensimag_sys
 - name: Application web de musique
   platform: Javascript
-  description: Utilisation de framework web moderne
-  url: https://bit.ly/2yfAFd
-    # https://ensiwiki.ensimag.fr/index.php?title=CAW1_2018_Projet_de_Emilien_MOTTET_et_Amaury_PUNEL
+  description: Vue.js, Express.js, MongoDB
+  url: https://frama.link/ensimag_sys
 
 
 hobbies:
@@ -90,20 +99,25 @@ hobbies:
 
 contributions:
 - name: gitlab
-  description: GitLab is a web-based Git-repository
+  description: Bug fix et simple feature
   url: https://gitlab.com/gitlab-org/gitlab-ce
-
-- name: java-gitlab-api
-  description: A wrapper for the Gitlab API written in Java
-  url: https://github.com/timols/java-gitlab-api
+- name: root-me
+  description: Réalisation de challenge de sécurité
+  url: https://www.root-me.org/emimo14
+- name: exercism.io
+  description: Mentor sur le parcours Elixir
+  url: https://exercism.io/tracks/elixir/mentors
+# - name: java-gitlab-api
+#   description: A wrapper for the Gitlab API written in Java
+#   url: https://github.com/timols/java-gitlab-api
 
 
 contact:
-  email: emilien@emottet.com
+  email: emilien.mottet@michelin.com
   phone: +33 658926176
   street: 53 rue du Temple
   city: Clermont-Ferrand, France
-  website: emottet.com
+  website: emilienmottet.github.io
   github: EmilienMottet
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: fr

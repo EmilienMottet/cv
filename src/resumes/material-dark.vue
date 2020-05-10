@@ -90,6 +90,7 @@
         </div>
       </div>
     </div>
+
     <div class="item last">
       <div v-if="person.knowledge" class="section-headline">
         {{ lang.additionalSkills }}
@@ -105,35 +106,34 @@
   <div class="rightCol">
     <div class="title">
       <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
-      <div>{{person.position}}</div>
+      <div class="description">{{person.position}}</div>
+      <span class="about">{{person.about}}</span>
     </div>
 
-    <div class="section-headline">{{ lang.experience }}</div>
+    <div class="section-headline experience">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
-      <div class="block-helper"></div>
-      <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
-        <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
+      <a
+      :href="experience.website">
+        <div class="block-helper"></div>
+        <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
+          <div class="subheadline">{{experience.timeperiod}}</div>
+          <p class="info">
+            {{experience.description}}
+          </p>
+      </a>
     </div>
     <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
-      <div class="block-helper"></div>
-      <div class="headline">{{education.degree}}</div>
-      <p class="info">
-        {{education.timeperiod}}, {{education.description}}
-      </p>
+      <a
+      :href="education.website">
+        <div class="block-helper"></div>
+        <div class="headline">{{education.degree}}</div>
+        <p class="info">
+          {{education.timeperiod}}, {{education.description}}
+        </p>
+      </a>
     </div>
-
-    <div v-if="person.projects" class="section-headline">{{ lang.projects }}</div>
-    <div class="block" v-for="(project, index) in person.projects" :key="index">
-      <div class="block-helper"></div>
-      <div class="headline">{{ project.name }}</div>
-      <p class="info"><strong>{{ project.platform }}</strong> // {{ project.description }}</p>
-      <a :href="project.url">{{ project.url }}</a>
-    </div>
-    </div>
+  </div>
 
   <div style="clear:both;"></div>
 </div>
@@ -150,18 +150,24 @@ export default Vue.component(name, getVueOptions(name));
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 .resume {
-    font-family:'Roboto' !important;
-    background:#cccccc;
+  font-family:'Roboto' !important;
+  background:#cccccc;
 }
 a {
-    cursor:pointer;
+  color: inherit;
+  cursor: pointer;
+  text-decoration-line: none;
+
+  &:visited {
+    color: inherit;
+  }
 }
 .description-personal {
-    margin-left:20px;
-    margin-top:20px;
-    padding-right:40px;
-    text-align:justify;
-    font-family:Roboto;
+  margin-left:20px;
+  margin-top:20px;
+  padding-right:40px;
+  text-align:justify;
+  font-family:Roboto;
 }
 .title {
     right:25px;
@@ -223,53 +229,53 @@ a {
   color:#3f3d3c;
 }
 .c {
-    clear:both;
+  clear:both;
 }
 li {
-    margin:0;
-    padding:0;
-    list-style-type:none;
-    padding-top:9px;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  padding-top:9px;
 }
 ul {
-    margin:0;
-    padding:0;
-    list-style-type:none;
+  margin:0;
+  padding:0;
+  list-style-type:none;
 }
 p {
-    margin-top:0;
-    margin-bottom:25px;
-    font-family:'Roboto', sans-serif;
-    font-weight:300;
-    font-size:10pt;
-    line-height:17pt;
+  margin-top:0;
+  margin-bottom:25px;
+  font-family:'Roboto', sans-serif;
+  font-weight:300;
+  font-size:10pt;
+  line-height:17pt;
 }
 .m_box {
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .fa, .material-icons {
-    display:inline-block;
-    font-style:normal;
-    font-weight:normal;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    font-size:26px;
+  display:inline-block;
+  font-style:normal;
+  font-weight:normal;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:26px;
 }
 h1, h3, h5, h6 {
-    font-weight:400;
-    margin:0;
+  font-weight:400;
+  margin:0;
 }
 h2 {
-    font-weight:400;
-    font-weight:500;
-    margin:0;
-    margin:0;
-    font-size:22pt;
-    line-height:37pt;
+  font-weight:400;
+  font-weight:500;
+  margin:0;
+  margin:0;
+  font-size:22pt;
+  line-height:37pt;
 }
 h4 {
-    font-weight:400;
+  font-weight:400;
   margin:0;
   font-size:12pt;
   line-height:20pt;
@@ -281,13 +287,23 @@ h4 {
   float:right;
   display:flex;
   flex-direction:column;
+  .experience {
+    margin-top: 40px;
+  }
+  .about {
+    display: block;
+    margin-top:8px !important;
+    font-weight:375;
+    font-size: 16px;
+    color:rgba(0,0,0,0.541176);
+  }
   .block {
-    width:80%;
+    width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:10px 20px;
-    margin-top:4px;
-    margin-bottom:4px;
+    padding:20px;
+    margin-top:5px;
+    margin-bottom:5px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
@@ -306,7 +322,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:10px;
+      padding-top:20px;
     }
     .icon {
       width:16%;
@@ -414,6 +430,9 @@ h4 {
       clear:both;
       width:97%;
       padding-top:4px;
+      span {
+        font-size: 13px;
+      }
       .left {
         float:left;
         width:10%;
@@ -455,9 +474,15 @@ h4 {
       }
     }
   }
-  .item.last .text {
-    border-bottom-style:none;
-    padding-bottom:0;
+  .item.last{
+    .text {
+      border-bottom-style:none;
+      padding-bottom:0;
+    }
+
+    .section-headline {
+      margin-top: 0 !important;
+    }
   }
 }
 #myselfpic {
